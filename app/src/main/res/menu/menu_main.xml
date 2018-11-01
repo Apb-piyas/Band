@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_library"
+        android:icon="@drawable/ic_cloud"
+        android:title="@string/library"
+        />
+
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/ic_tag"
+        android:title="@string/favorites" />
+
+    <item
+        android:id="@+id/nav_sleep_timer"
+        android:icon="@drawable/ic_time"
+        android:title="@string/sleep_timer"/>
+
+    <item
+        android:id="@+id/nav_equalizer"
+        android:icon="@drawable/ic_equalizer"
+        android:title="@string/equalizer" />
+
+
+    <item
+        android:id="@+id/nav_privacy_policy"
+        android:icon="@drawable/ic_lock"
+        android:title="@string/privacy_policy" />
+
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_about"
+        android:title="@string/about" />
+
+    <item
+        android:id="@+id/nav_share_app"
+        android:icon="@drawable/ic_share"
+        android:title="@string/share_app" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+</menu>

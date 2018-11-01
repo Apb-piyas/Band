@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="miniPlayerTextColor"></attr>
+    <attr name="bg"></attr>
+    <attr name="rowItemTextColor"></attr>
+    <attr name="startColor"></attr>
+    <attr name="endColor"></attr>
+    <attr name="centerColor"></attr>
+</resources>

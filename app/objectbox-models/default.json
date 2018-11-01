@@ -1,0 +1,128 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:5234920090596792496",
+      "lastPropertyId": "18:6468434646348641982",
+      "name": "Track",
+      "properties": [
+        {
+          "id": "1:2418026937140662906",
+          "name": "id"
+        },
+        {
+          "id": "2:3814790144121804719",
+          "name": "remoteId"
+        },
+        {
+          "id": "3:6101491618694405944",
+          "name": "title"
+        },
+        {
+          "id": "4:7386791185994690039",
+          "name": "artist"
+        },
+        {
+          "id": "5:7406502495194729298",
+          "name": "path"
+        },
+        {
+          "id": "6:5599465744018022405",
+          "name": "artists"
+        },
+        {
+          "id": "7:5711971956346805077",
+          "name": "thumb"
+        },
+        {
+          "id": "8:2357080278248311988",
+          "name": "playlistId"
+        },
+        {
+          "id": "9:459669547359859813",
+          "name": "size"
+        },
+        {
+          "id": "10:6640358954706307821",
+          "name": "duration"
+        },
+        {
+          "id": "11:4869508712001559103",
+          "name": "extension"
+        },
+        {
+          "id": "12:4684474580973199939",
+          "name": "albumId"
+        },
+        {
+          "id": "14:5959898813371753968",
+          "name": "selected"
+        },
+        {
+          "id": "15:1053568690071568406",
+          "name": "checked"
+        },
+        {
+          "id": "16:3089018204397931517",
+          "name": "favoriest"
+        },
+        {
+          "id": "17:6988014340683098139",
+          "name": "realPath"
+        },
+        {
+          "id": "18:6468434646348641982",
+          "name": "description"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:4723402030834200852",
+      "lastPropertyId": "6:7322000894469322274",
+      "name": "MyPlaylist",
+      "properties": [
+        {
+          "id": "1:7313593001090896804",
+          "name": "id"
+        },
+        {
+          "id": "2:5691970320728447814",
+          "name": "name"
+        },
+        {
+          "id": "3:4993966626318542792",
+          "name": "total_track"
+        },
+        {
+          "id": "4:2958226531486858421",
+          "name": "thumb"
+        },
+        {
+          "id": "5:1486631217454531012",
+          "name": "checked"
+        },
+        {
+          "id": "6:7322000894469322274",
+          "name": "selected"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:4723402030834200852",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    6527779118511566526
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

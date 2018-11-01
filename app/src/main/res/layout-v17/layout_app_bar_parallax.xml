@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="68dp"
+    sothree:umanoShadowHeight="4dp">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <include layout="@layout/layout_app_bar" />
+
+        <include layout="@layout/layout_content" />
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--start playback-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="?attr/colorPrimary"
+            android:gravity="center|top"
+            android:id="@+id/miniPlayback"
+            >
+
+
+                <ImageView
+                    android:id="@+id/imgMiniThumb"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg"
+                    android:scaleType="fitXY"
+                    />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvMiniTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/miniPlayerTextColor"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvMiniArtist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/miniPlayerTextColor"
+                    android:layout_marginStart="5dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <ImageButton
+                    android:id="@+id/btnMiniPrev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/ic_prev_no_circle"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/btnMiniPlayPause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/ic_play_no_circle"
+                        android:layout_gravity="center"
+                        />
+
+                    <com.wang.avi.AVLoadingIndicatorView
+                        android:visibility="gone"
+                        android:id="@+id/indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:indicatorName="LineScalePulseOutIndicator" />
+
+                </FrameLayout>
+
+                <ImageButton
+                    android:id="@+id/btnMiniNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/ic_next_no_circle"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <!--end playback-->
+
+         <!--Main player-->
+        <include layout="@layout/layout_main_player"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+        <!--End Main Player-->
+
+
+    </LinearLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+
+

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.nabinbhandari.android:permissions-3.5">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/permissions-3.5.aar/0d4c12448f0a87b4fec8380446e94757/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/permissions-3.5.aar/0d4c12448f0a87b4fec8380446e94757/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nabinbhandari.android/permissions/3.5/e61292cce3590a0260cf3af3b97c4af80a21f096/permissions-3.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

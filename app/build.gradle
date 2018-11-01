@@ -1,0 +1,93 @@
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "lrandomdev.com.online.mp3player"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        manifestPlaceholders = [
+                onesignal_app_id               : '8b4b50d2-961c-41d1-bdd8-fdcf703c1869',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: '762391382612'
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+        jcenter()
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.10.1, 0.99.99]'
+        classpath "io.objectbox:objectbox-gradle-plugin:1.5.0"
+    }
+}
+
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'io.objectbox'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.google.com' }
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://dl.bintray.com/spartacus777/rateusdialoghelper' }
+    jcenter()
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:27.0.1'
+    implementation 'com.android.support:design:27.0.1'
+    implementation 'com.android.support:cardview-v7:27.0.1'
+    implementation 'com.google.android.gms:play-services-ads:11.8.0'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'jp.wasabeef:blurry:2.1.1'
+    implementation 'com.sothree.slidinguppanel:library:3.3.0'
+    implementation 'com.nabinbhandari.android:permissions:3.5'
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+    implementation 'com.diogobernardino:williamchart:2.5.0'
+    implementation 'com.h6ah4i.android.widget.verticalseekbar:verticalseekbar:0.7.2'
+    implementation 'com.sdsmdg.harjot:croller:1.0.7'
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'jp.wasabeef:glide-transformations:3.3.0'
+    implementation 'com.codemybrainsout.rating:ratingdialog:1.0.8'
+    implementation 'com.github.varunest:sparkbutton:1.0.5'
+    implementation 'com.onesignal:OneSignal:[3.9.1, 3.99.99]'
+    implementation 'com.google.android.gms:play-services-analytics:10.2.4'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:support-v4:27.0.1'
+
+}

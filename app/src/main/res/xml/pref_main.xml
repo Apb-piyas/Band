@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="enable_push_notification"
+        android:title="@string/enable_push_notification" />
+
+    <PreferenceCategory android:title="@string/user_interface">
+        <ListPreference
+            android:key="themes"
+            android:dialogTitle="@string/choose_theme"
+            android:title="@string/base_theme"
+            android:entryValues="@array/pref_theme_values"
+            android:defaultValue="0"
+            android:entries="@array/pref_theme_entries"
+            />
+
+        <ListPreference
+            android:key="swipe_tab_effects"
+            android:dialogTitle="@string/choose_effects"
+            android:title="@string/swipe_tab_effects"
+            android:defaultValue="1"
+            android:entryValues="@array/pref_effect_swipe_tab_values"
+            android:entries="@array/pref_effect_swipe_tab_entries"
+            />
+
+        <CheckBoxPreference
+            android:title="@string/view_track_in_grid"
+            android:defaultValue="false"
+            android:key="track_grid"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/struction">
+        <ListPreference
+            android:key="language"
+            android:dialogTitle="Choose Languages"
+            android:title="@string/choose_language"
+            android:defaultValue="en"
+            android:entryValues="@array/pref_language_values"
+            android:entries="@array/pref_language_entries"/>
+    </PreferenceCategory>
+</PreferenceScreen>

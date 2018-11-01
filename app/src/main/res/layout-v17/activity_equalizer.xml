@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/bg"
+    >
+    <include
+        layout="@layout/layout_toolbar"/>
+
+    <com.db.chart.view.LineChartView
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_above="@+id/equalizerContainer"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/graph_back_2"
+        android:paddingBottom="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/spnPreset"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/combobox"
+
+      >
+
+    </Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:layout_marginTop="-20dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8">
+                <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+                    android:id="@+id/equalizer1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="30dp"
+                    android:splitTrack="false"
+                    app:seekBarRotation="CW270"
+                    android:progressDrawable="@drawable/seekbar_style"
+                    android:thumb="@drawable/seekbar_thumb"
+                    android:maxHeight="5dip"
+                    android:minHeight="5dip"
+                    />
+            </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textColor="@color/colorWhite"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8">
+                <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+                    android:id="@+id/equalizer2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="30dp"
+                    android:splitTrack="false"
+                    app:seekBarRotation="CW270"
+                    android:progressDrawable="@drawable/seekbar_style"
+                    android:thumb="@drawable/seekbar_thumb"
+                    android:maxHeight="5dip"
+                    android:minHeight="5dip"
+                    />
+            </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textColor="@color/colorWhite"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8">
+                <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+                    android:id="@+id/equalizer3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="30dp"
+                    android:splitTrack="false"
+                    app:seekBarRotation="CW270"
+                    android:progressDrawable="@drawable/seekbar_style"
+                    android:thumb="@drawable/seekbar_thumb"
+                    android:maxHeight="5dip"
+                    android:minHeight="5dip"
+                    />
+            </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textColor="@color/colorWhite"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8">
+
+                <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+                    android:id="@+id/equalizer4"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="30dp"
+                    android:splitTrack="false"
+                    app:seekBarRotation="CW270"
+                    android:progressDrawable="@drawable/seekbar_style"
+                    android:thumb="@drawable/seekbar_thumb"
+                    android:maxHeight="5dip"
+                    android:minHeight="5dip"
+                    />
+            </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textColor="@color/colorWhite"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8">
+
+                <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+                    android:id="@+id/equalizer5"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="30dp"
+                    android:splitTrack="false"
+                    app:seekBarRotation="CW270"
+                    android:progressDrawable="@drawable/seekbar_style"
+                    android:thumb="@drawable/seekbar_thumb"
+                    android:maxHeight="5dip"
+                    android:minHeight="5dip"
+                    />
+            </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textColor="@color/colorWhite"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.sdsmdg.harjot.crollerTest.Croller
+                android:id="@+id/gaugeBass"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                app:back_circle_color="#EDEDED"
+                app:indicator_color="#0B3C49"
+                app:indicator_width="10"
+                app:is_continuous="false"
+                app:label_color="@color/colorWhite"
+                app:main_circle_color="#FFFFFF"
+                app:progress_primary_color="#0B3C49"
+                app:progress_secondary_color="#EEEEEE"
+                app:start_offset="45"
+                app:label="@string/bass"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.sdsmdg.harjot.crollerTest.Croller
+                android:id="@+id/gauge3D"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                app:back_circle_color="#EDEDED"
+                app:indicator_color="#0B3C49"
+                app:indicator_width="10"
+                app:is_continuous="false"
+                app:label_color="@color/colorWhite"
+                app:main_circle_color="#FFFFFF"
+                app:progress_primary_color="#0B3C49"
+                app:progress_secondary_color="#EEEEEE"
+                app:start_offset="45"
+                app:label="@string/string_3d"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

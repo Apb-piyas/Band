@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/btnAddToPlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_add_to_playlist"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share"
+            android:background="@null"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/btnLyrics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_content"
+            android:background="@null"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/btnList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_current_playlist"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tvElapsedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingTop="10dip"
+            android:text="00:00"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <SeekBar
+            android:id="@+id/seekTrack"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@drawable/seekbar_thumb"
+            android:maxHeight="5dip"
+            android:minHeight="5dip"
+            android:thumbOffset="0dip"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvTotalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingTop="10dip"
+            android:text="99:99"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/btnRepeat"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_repeat"
+            android:background="@null"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_prev"
+            android:background="@null"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            >
+
+            <ImageButton
+                android:id="@+id/btnPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_play"
+                android:background="@null"
+                />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/mainIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:indicatorName="LineScalePulseOutIndicator"
+                android:visibility="gone"
+                />
+
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_next"
+            android:background="@null"/>
+
+        <ImageButton
+            android:id="@+id/btnShuffle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_shuffle"
+            android:background="@null"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

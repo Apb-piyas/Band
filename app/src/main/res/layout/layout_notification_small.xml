@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/colorNotification">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="New Text"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="New Text"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <ImageButton
+            android:id="@+id/btnPrev"
+            android:layout_width="26dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="5dp"
+            android:src="@drawable/ic_prev_no_circle" />
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="5dp"
+            android:src="@drawable/ic_play_no_circle" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="5dp"
+            android:src="@drawable/ic_next_no_circle" />
+    </LinearLayout>
+</LinearLayout>
